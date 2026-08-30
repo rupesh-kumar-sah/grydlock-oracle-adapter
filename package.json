@@ -1,6 +1,6 @@
 {
   "name": "grydlock-oracle-adapter",
-  "version": "0.1.0",
+  "version": "1.3.0",
   "description": "Read-client that fetches a 0-100 risk score for a Stellar address or asset from an on-chain risk oracle.",
   "license": "MIT",
   "private": true,
@@ -28,7 +28,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "node scripts/build.mjs",
+    "build": "node init && node scripts/build.mjs",
     "typecheck": "tsc --noEmit && tsc -p tsconfig.typetest.json",
     "lint": "eslint .",
     "format": "prettier --write .",
